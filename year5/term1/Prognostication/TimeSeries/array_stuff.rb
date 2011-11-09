@@ -18,6 +18,16 @@ class Array
     diffs_arr
   end
 
+  def scalar_product(arr)
+    sum = 0
+
+    self.size.times do |i|
+      sum += self[i] * arr[i]
+    end
+    
+    sum
+  end
+
   def max_abs
     self.compact.max {|a,b| a.abs <=> b.abs}.abs
   end

@@ -26,6 +26,20 @@ def smooth_array(arr, n)
   new_arr
 end
 
+def smooth_with_wma(arr, wma_func, n)
+  new_arr = Array.new(arr)
+  
+  return new_arr if n <= 0
+
+  start = n
+  finish = -n
+
+  (start...finish).each do |i|
+    new_arr[i] = wma_func.call(arr, i)
+  end
+  new_arr
+end
+
 def find_k(arr)
   prev_diffs = arr.diffs
   curr_diffs = arr.diffs.diffs
@@ -52,6 +66,28 @@ def find_k(arr)
   k
 end
 
+# weightted moving average
+
+def get_wma5(y, pos)
+  coefs = [-3, 12, 17, 12, -3]
+  coefs.map!{|c| c / 35.0}
+
+  a = 2
+  y_vect = y[(pos - a)..(pos+a)]
+
+  y_vect.scalar_product(coefs)
+end
+
+def get_wma7(y, pos)
+  coefs = [-2, 3, 6, 7, 6, 3, -2]
+  coefs.map!{|c| c / 21.0}
+
+  a = 3
+  y_vect = y[(pos - a)..(pos+a)]
+
+  y_vect.scalar_product(coefs)
+end
+
 
 ##############################
 
@@ -76,7 +112,7 @@ puts values.inspect
 # find power of polynomial
 k = find_k values
 
-k = 7
+k = 6
 
 temp_arr = values
 
@@ -125,6 +161,12 @@ end
 
 polynom = polynom_arr.join("+")
 
+
 ##############################
 
-draw_datasets time_values, all_arrays, polynom
+m5_data = smooth_with_wma(values, method(:get_wma5), 2).map{|x|x + 0.9}
+m7_data = smooth_with_wma(values, method(:get_wma7), 3).map{|x| x + 1}
+
+##############################
+
+draw_datasets time_values, values, polynom, m5_data, m7_data
