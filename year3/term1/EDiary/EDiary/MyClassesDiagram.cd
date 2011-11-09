@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="EDiary.DrawingArea">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AwCAAAAAAAAAAAAAAABAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>TransparentPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DollarDrawer">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TransparentPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.EventInfo">
+    <Position X="11.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAgCAAAEAAAAAAAAAAAgQAABAEAAAQAAAAA=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Staff.PersonList">
+    <Position X="9.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PersonList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.MyDiaryList">
+    <Position X="5.5" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACQEgAAAAAIAAIAAAAAAQBAAgAAAwQgCoA=</HashCode>
+      <FileName>MyDiaryList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Properties.Settings">
+    <Position X="6" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAwAAgAAAIAAAAAABAABAAACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DiaryEntry">
+    <Position X="14" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DiaryEntryItem">
+    <Position X="12" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DiaryEntryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.PersonInfo">
+    <Position X="14" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAkAABEQAQAREAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EDiary.Appointment">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAEAAAAAAAAAAEIAAAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

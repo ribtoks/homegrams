@@ -1,0 +1,30 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MacroEngine/MacroProcessor.cs" ctype="Workbench">
+    <Files>
+      <File FileName="MacroEngine/Globals.cs" Line="9" Column="47" />
+      <File FileName="MacroProcesor/Main.cs" Line="1" Column="1" />
+      <File FileName="MacroProcesor/MainWindow.cs" Line="66" Column="5" />
+      <File FileName="MacroProcesor/ResultsWindow.cs" Line="1" Column="1" />
+      <File FileName="MacroEngine/MacroProcessor.cs" Line="88" Column="13" />
+      <File FileName="MacroEngine/LanguageObjects.cs" Line="196" Column="22" />
+      <File FileName="MacroEngine/MacroEnvironment.cs" Line="168" Column="36" />
+      <File FileName="MacroEngine/Statements.cs" Line="207" Column="36" />
+      <File FileName="MacroEngine/Blocks.cs" Line="75" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="MacroEngine" expanded="True">
+            <Node name="MacroProcessor.cs" selected="True" />
+          </Node>
+          <Node name="MacroProcConsole" expanded="True" />
+          <Node name="MacroProcesor" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

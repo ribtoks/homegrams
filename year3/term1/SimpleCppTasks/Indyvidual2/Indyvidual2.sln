@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Indyvidual2", "Indyvidual2\Indyvidual2.vcproj", "{5813CC71-1576-4211-9847-325BE842CF44}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateHometask1", "TemplateHometask1\TemplateHometask1.vcproj", "{C8EE56EE-9524-43C1-B110-791CD9A0CDA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5813CC71-1576-4211-9847-325BE842CF44}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5813CC71-1576-4211-9847-325BE842CF44}.Debug|Win32.Build.0 = Debug|Win32
+		{5813CC71-1576-4211-9847-325BE842CF44}.Release|Win32.ActiveCfg = Release|Win32
+		{5813CC71-1576-4211-9847-325BE842CF44}.Release|Win32.Build.0 = Release|Win32
+		{C8EE56EE-9524-43C1-B110-791CD9A0CDA1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8EE56EE-9524-43C1-B110-791CD9A0CDA1}.Debug|Win32.Build.0 = Debug|Win32
+		{C8EE56EE-9524-43C1-B110-791CD9A0CDA1}.Release|Win32.ActiveCfg = Release|Win32
+		{C8EE56EE-9524-43C1-B110-791CD9A0CDA1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

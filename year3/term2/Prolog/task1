@@ -1,0 +1,12 @@
+ancestor(antonina,maria).
+ancestor(danylo,maria).
+ancestor(antonina,julia).
+ancestor(danylo,julia).
+ancestor(gregory,volodymyr).
+ancestor(valentina,volodymyr).
+ancestor(gregory,svyatoslav).
+ancestor(valentina,svyatoslav).
+ancestor(maria,taras).
+ancestor(volodymyr,taras).
+ancestor(maria,lyubomyr).
+ancestor(volodymyr,lyubomyr).

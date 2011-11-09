@@ -1,0 +1,44 @@
+@declare a b
+@declare b c
+
+@declare neq NotEqual
+@declare line ------------
+@declare someword someotherword
+
+@declare name taras
+@declare count 1
+
+@declarefunc myfirstfunc(x, y)
+
+@repeat(10)
+	k = y;m = x;
+
+	@if (k != m)
+	    @println(neq);@println(); c = HowDoYouDo?;    @println(c);
+	@ifend
+
+	mysecondfunc(m);
+	@println(line);
+
+@rend
+
+@println(x, y);
+@print(x, k, m, k);
+@println(x);
+@fend
+
+@declarefunc mysecondfunc(x)
+
+@println(x, b, aa);
+
+@fend
+
+@declarefunc mythirdfunc(k, l)
+	     length = @length(k);
+	     @if (length > 0)
+	     	 temp = @reduce(k, l);
+		 mythirdfunc(temp, l);
+	     @ifend
+
+	     @println(k);
+@fend

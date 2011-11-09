@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/MacroProcesor.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="642 489">
+    <property name="MemberName" />
+    <property name="WidthRequest">630</property>
+    <property name="HeightRequest">460</property>
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <property name="AllowGrow">False</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed3">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">380</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="textview4">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">323</property>
+            <property name="Y">13</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">380</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="textview3">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">5</property>
+            <property name="Y">15</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.FileChooserButton" id="filechooserbutton1">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+          </widget>
+          <packing>
+            <property name="X">6</property>
+            <property name="Y">397</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button3">
+            <property name="MemberName" />
+            <property name="WidthRequest">80</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Load</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton3Clicked" />
+          </widget>
+          <packing>
+            <property name="X">110</property>
+            <property name="Y">397</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button6">
+            <property name="MemberName" />
+            <property name="WidthRequest">80</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Save</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton6Clicked" />
+          </widget>
+          <packing>
+            <property name="X">193</property>
+            <property name="Y">397</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button7">
+            <property name="MemberName" />
+            <property name="WidthRequest">80</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Save</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton7Clicked" />
+          </widget>
+          <packing>
+            <property name="X">527</property>
+            <property name="Y">395</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button5">
+            <property name="MemberName" />
+            <property name="WidthRequest">80</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Load</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton5Clicked" />
+          </widget>
+          <packing>
+            <property name="X">444</property>
+            <property name="Y">395</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.FileChooserButton" id="filechooserbutton2">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+          </widget>
+          <packing>
+            <property name="X">340</property>
+            <property name="Y">395</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button8">
+            <property name="MemberName" />
+            <property name="WidthRequest">80</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Run</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton8Clicked" />
+          </widget>
+          <packing>
+            <property name="X">274</property>
+            <property name="Y">426</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="MacroProcesor.ResultsWindow" design-size="418 444">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">ResultsWindow</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed4">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">400</property>
+            <property name="HeightRequest">400</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="textview5">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">11</property>
+            <property name="Y">12</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

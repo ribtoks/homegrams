@@ -1,0 +1,6 @@
+This is a sample of macro execution of someword.
+
+bbb aaa bbb
+
+myfirstfunc(a, b)
+mythirdfunc(name, count)

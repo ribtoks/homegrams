@@ -1,0 +1,39 @@
+function AllCalculations
+n = input('Enter number of points you can enter (after that, enter points) >: ')
+x(1) = 0;
+	for i=1:n
+		x(i) = input('>: ');    
+    end
+
+a = input('Enter left bound of interval >: ')
+b = input('Enter right bound of interval >: ')
+
+if a >= b
+	errRecord = MException('Wrong interval!');
+	throw(errRecord);
+end
+
+pointsNumber = input('Enter number of points for interpolation (both Equidistant and Chebysh) >: ');
+
+equidistantPoints = GetEquidistantPoints(a, b, pointsNumber);
+chebyshPoints = GetChebyshPoints(pointsNumber);
+
+usualX = a:0.001:b;
+
+	for i = 1:length(usualX)
+		usualY(i) = RungeFunction(usualX(i));
+	end
+
+	for i = 1:n
+		yEquidistant(i) = InterpolateByLagrange(@RungeFunction, equidistantPoints, x(i));
+		yChebysh(i) =  InterpolateByLagrange(@RungeFunction, chebyshPoints, x(i));
+	end
+
+subplot(1, 2, 1);
+plot(usualX, usualY);
+hold on
+plot(x, yEquidistant);
+subplot(1, 2, 2);
+plot(usualX, usualY);
+hold on
+plot(x, yChebysh);
