@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxFrame" name="MyFrame1" subclass="SamplesWorkFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>714,479</size>
+		<title></title>
+		<centered>1</centered>
+		<object class="wxNotebook" name="m_notebook1">
+			<object class="notebookpage">
+				<label>Sample input</label>
+				<selected>1</selected>
+				<object class="wxPanel" name="m_panel1">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,50</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>50,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="m_staticText2">
+										<label>Sample 1</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxTextCtrl" name="sample1TextBox">
+										<value>5 6 9 12 18</value>
+										<maxlength>0</maxlength>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>60,0</size>
+								</object>
+							</object>
+						</object>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,10</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>50,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="m_staticText3">
+										<label>Sample 2</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxTextCtrl" name="sample2TextBox">
+										<value>25 30 35 45 65</value>
+										<maxlength>0</maxlength>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>60,0</size>
+								</object>
+							</object>
+						</object>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,50</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="spacer">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>0,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxButton" name="submitButton">
+										<label>Submit</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>0,0</size>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="notebookpage">
+				<label>Sample calculations</label>
+				<selected>0</selected>
+				<object class="wxPanel" name="m_panel2">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>20,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxButton" name="recalculateButton">
+										<size>200,-1</size>
+										<label>Recalculate</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxButton" name="additionalButton">
+										<size>200,-1</size>
+										<label>Make Additional Calculations</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxButton" name="drawGraphicsButton">
+										<size>200,-1</size>
+										<label>Draw Graphics</label>
+										<default>0</default>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxGrid" name="samplesGrid" />
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="notebookpage">
+				<label>Additional calculations</label>
+				<selected>0</selected>
+				<object class="wxPanel" name="m_panel4">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxButton" name="checkPhisherButton">
+										<size>300,-1</size>
+										<label>Check hipothesis using Phisher criteria</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="phisherResult">
+										<label>PhisherResult</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxGrid" name="additonalGrid" />
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="notebookpage">
+				<label>Confidence intervals</label>
+				<selected>0</selected>
+				<object class="wxPanel" name="m_panel41">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>10</border>
+							<object class="wxButton" name="intervalsCalculateButton">
+								<label>Calculate</label>
+								<default>0</default>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND|wxLEFT|wxTOP</flag>
+							<border>20</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="m_staticText8">
+										<label>Sigma E</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>25,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="sigmaE_Label">
+										<label>MyLabel</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,10</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND|wxLEFT</flag>
+							<border>20</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="m_staticText10">
+										<label>Sigma b0</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>20,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="sigmaB0_Label">
+										<label>MyLabel</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,10</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND|wxLEFT</flag>
+							<border>20</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="m_staticText12">
+										<label>Sigma b1</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="spacer">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<size>20,0</size>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="sigmaB1_Label">
+										<label>MyLabel</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,10</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxLEFT</flag>
+							<border>30</border>
+							<object class="wxStaticText" name="ci_b0_Label">
+								<label>MyLabel</label>
+								<wrap>-1</wrap>
+							</object>
+						</object>
+						<object class="spacer">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<size>0,10</size>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxLEFT</flag>
+							<border>30</border>
+							<object class="wxStaticText" name="ci_b1_Label">
+								<label>MyLabel</label>
+								<wrap>-1</wrap>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND|wxLEFT|wxTOP</flag>
+							<border>20</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="m_staticText16">
+										<label>Next point:</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxTextCtrl" name="nextPointTextBox">
+										<value></value>
+										<maxlength>0</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+									<border>5</border>
+									<object class="wxButton" name="calculateNextPButton">
+										<size>150,-1</size>
+										<label>Calc new point</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxRIGHT</flag>
+									<border>10</border>
+									<object class="wxStaticText" name="nextValueLabel">
+										<label>MyLabel</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALIGN_CENTER_VERTICAL|wxLEFT|wxRIGHT</flag>
+									<border>10</border>
+									<object class="wxStaticText" name="intervalLabel">
+										<label>MyLabel</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

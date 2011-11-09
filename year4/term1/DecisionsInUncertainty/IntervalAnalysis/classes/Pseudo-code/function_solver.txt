@@ -1,0 +1,396 @@
+
+
+class ZerosFinder
+
+клас FunctionTransformer - клас, який будує інтервальне розширення для певної
+  функції - визначений в іншому файлі
+
+  property funcTransformer {get; set;} : FunctionTransformer
+
+  property zeros {get} : Array - масив знайдених нулів
+  property steps_counter {get} : integer
+  property epsilon {get; set;}
+  property log {get} - масив рядків string[] (масив рядків для того, щоб потім
+  їх виводити в якийсь текстбокс - бо я інакше не придумав, як виводити
+  службову інформацію в процесі алгоритму)
+  
+  function constructor (funcTransformer, write_to_log=true)
+    this.funcTransformer = funcTransformer
+    this.zeros = new Array()
+    this.write_to_log = write_to_log
+    if (write_to_log)
+     this.log = new string_array() 
+  end
+
+  function solve(epsilon, interval)
+    raise NotImplementedError.new("#{self.class.name} is an abstract class")
+  end
+  
+end
+
+class BinaryFinder : ZerosFinder
+  
+  function constructor (funcTransformer, write_to_log=true)
+  виклик конструктора базового класу
+    base(funcTransformer, write_to_log)
+  end
+
+  function solve(epsilon, interval)
+    this.steps_counter = 0
+    this.zeros.clear
+    this.epsilon = epsilon
+    if this.write_to_log
+        this.log.clear 
+
+    inner_solve(interval)
+
+    return zeros
+  end
+
+
+  private function inner_solve(interval)
+    // solves problem using binary search
+
+    // main loop of algorithm
+    while (interval.width > this.epsilon)
+      
+      this.steps_counter += 1
+
+      if this.write_to_log
+      	 додати в масив рядків черговий запис із службовою інформацією
+	 там були інтервал і значення функції в нижній, верхній точці
+      	 інтервалу
+	 та посередині
+      end
+
+      тут масив повернувся
+      newIntervals = interval.divide2()
+      funcIntervals = new Array() : interval
+      foreach (interval in newIntervals)
+      {
+	funcIntervals.add(funcTransformer.transform(interval))
+      }
+      containsZero = new Array() : boolean
+      тут шукаю всі інтервальні розширення які містять нуль
+      foreach(interval in funcIntervals)
+      {
+	containsZero.add(interval.contains_zero?)
+      }
+      тут створюється словник - відображення інтервального розширення
+      на масив чи є там нуль
+      (тобто в словнику будуть відображення типу інтервал->(чи є нуль в інтервалі))
+      hash = new Dictionary() {funcIntervals -> containsZero}
+
+      // remove intervals with no zeros
+      стерти із словника всі елементи без нулів
+      results = hash.delete_all_false
+
+      // if no zeros - return
+      якщо після стирання не залишилось елементів - вийти
+      if (results.empty?)
+      	 return
+
+      // if there're two zeros - solve other
+      // interval with this method
+      if (results.size == 2)
+
+        if (newIntervals[1].width <= this.epsilon)
+          this.zeros.add(newIntervals[0].b)
+          break
+        else
+		якщо були нулі в кожному підінтервалі
+		то один рекурсивно викликати
+		а інший - далі проганяти в циклі
+          inner_solve(newIntervals[1])
+          interval = newIntervals[0]
+        end
+        
+      else
+	тут залишився один інтервал в якому є нуль
+	- от його і присвоїти даному
+	(незважай на синтаксис тут)
+        interval = newIntervals[ results.has_key?(funcIntervals[0]) ? 0 : 1 ]
+      end
+
+      // save current solution if out interval is pretty small
+      if (interval.width <= this.epsilon)
+      	 this.zeros.add(interval.middle)
+      
+    end
+    
+  end
+
+end
+
+class NewtonMooreZerosFinder : ZerosFinder
+
+  function constructor(function, derivativeTransformer, write_to_log=true)
+  	   виклик базового конструктора
+    base(nil, write_to_log)
+
+    this.function = function
+    this.derivTransformer = derivativeTransformer
+  end
+
+  function solve(epsilon, interval)
+    this.steps_counter = 0
+    this.epsilon = epsilon
+    if this.write_to_log
+       this.log.clear 
+    inner_solve(interval)
+    return(this.zeros)
+  end
+
+  private function inner_solve(interval)
+    curr_interval = new Interval(interval)
+   
+    while curr_interval.width > this.epsilon
+
+      if this.write_to_log
+        записати в масив рядків відповідну інформацію
+      end
+
+      curr_point = curr_interval.middle
+
+      temp_interval = new Interval(curr_point)
+      func_interval = new Interval(this.function.call(curr_point))
+
+      інтервальне розширення похідної
+      deriv_interval = this.derivTransformer.transform(curr_interval)
+
+      якщо в інтервальному розширенні похідної є нуль
+      то поділити даний інтервал на два
+      (бо на нуль ділити не можна)
+      if(deriv_interval.contains_zero?)
+        arr = curr_interval.divide2()
+        inner_solve(arr[0])
+        inner_solve(arr[1])
+        break
+      end
+
+      оператори є перевантажені - того
+      тут можна просто так записати
+      next_interval = temp_interval -
+        func_interval/deriv_interval
+
+	і перетин двох інтервалів
+      next_interval = Interval.intersect2(curr_interval, next_interval)
+      if(next_interval.empty?)
+      	 break 
+
+	 якщо довжина нового інтервалу більша
+	 за половину даного - то теж треба
+	 ділити даний інтервал на два
+      if (next_interval.width > 0.5*curr_interval.width)
+        arr = curr_interval.divide2()
+        inner_solve(arr[0])
+        inner_solve(arr[1])
+        break
+      end
+      if next_interval.width <= this.epsilon
+            this.zeros.add(next_interval.middle)
+      this.steps_counter += 1
+
+      if (this.function.call(next_interval.middle).abs <= this.epsilon)
+        this.zeros.add(next_interval.middle)
+        break
+      end
+      
+      переприсвоєння нового інтервалу
+      curr_interval = next_interval
+      
+    end
+    
+  end
+  
+end
+
+class NewtonHansenZerosFinder : ZerosFinder
+
+  function constructor(function, derivativeTransformer)
+  конструктор базового класу
+    base(nil)
+
+    this.function = function
+    this.derivTransformer = derivativeTransformer
+  end
+
+  function solve(epsilon, interval)
+    this.steps_counter = 0
+    this.epsilon = epsilon
+    inner_solve(interval)
+    this.zeros
+  end
+
+  private function inner_solve(interval)
+    
+    curr_interval = new Interval(interval)
+   
+    while (curr_interval.width > this.epsilon)
+
+      if this.write_to_log
+        записати відповідне до логу
+      end
+
+      curr_point = curr_interval.a
+
+      просто рутинні обчислення
+      temp_interval = new Interval(curr_point)
+      func_interval = new Interval(this.function.call(curr_point))
+
+      інтервальне розширення похідної
+      deriv_interval = this.derivTransformer.transform(curr_interval)
+
+      знайти обернений інтервал
+      conversed = deriv_interval.converse()
+      його я окремо шукаю, щоб перевірити, чи часом
+      він не повернув масив з нескінченостями - таке може бути
+      коли там є ділення на нуль - в цьому і фішка методу хансена
+
+      // if division by zero and
+      // more, than one interval
+      if (conversed.kind_of?(Array))
+      	 тут в масив conversed заносяться
+	 вже пораховані методом ньютона нові інтервали
+	 foreach (i in conversed)
+	 {
+		i = temp_interval - func_interval*i
+	 }
+
+        conversed.add(curr_interval)
+	треба перетнути всі інтервали
+        intersected = Interval.intersect(conversed)
+
+        is_bad = false
+	перевірка умови на те, щоб нові інтервали були
+	меньші, ніж половина цього
+	foreach(i in intersected)
+          if (i.width > 0.5*curr_interval.width)
+            is_bad = true
+            break
+          end
+        end
+
+	якщо хоч для якогось інтервалу таке виконалось
+	тоді поділити на два даний
+        if (is_bad)
+          arr = curr_interval.divide2()
+          inner_solve(arr[0])
+          inner_solve(arr[1])
+          break
+        end
+                
+		інакше, якщо все ок, тоді
+		розв'язати задачу для тих інтервалів
+		які утворились після перетину
+        inner_solve(intersected[0])
+        inner_solve(intersected[1])
+        break
+      end
+
+      от на цьому кроці тепер все ок
+      просто порахувати наступний інтервал методом ньоютона
+      next_interval = temp_interval -
+        func_interval/deriv_interval
+
+
+      next_interval = Interval.intersect2(curr_interval, next_interval)
+
+      if (next_interval.empty?)
+      	 break 
+
+      if (next_interval.width > 0.5*curr_interval.width)
+        arr = curr_interval.divide2()
+        inner_solve(arr[0])
+        inner_solve(arr[1])
+        break
+      end
+
+      if next_interval.width <= this.epsilon
+            this.zeros.add(next_interval.middle) 
+      this.steps_counter += 1
+
+      if (this.function.call(next_interval.middle).abs <= this.epsilon)
+        this.zeros.add(next_interval.middle)
+        break
+      end
+      
+      curr_interval = next_interval
+    end
+    
+  end
+  
+end
+
+class NewtonKravchykZerosFinder : ZerosFinder
+
+  function constructor(function, functionDeriv, derivativeTransformer, write_to_log=true)
+    base (nil, write_to_log)
+
+    this.function = function
+    this.functionDeriv = functionDeriv
+    this.derivTransformer = derivativeTransformer
+  end
+
+  function solve(epsilon, interval)
+    this.steps_counter = 0
+    this.epsilon = epsilon
+    this.log.clear if this.write_to_log
+    inner_solve(interval)
+    return this.zeros
+  end
+
+  private function inner_solve(interval)
+    curr_interval = new Interval(interval)
+   
+    while (curr_interval.width > this.epsilon)
+
+      // save data to log
+      if this.write_to_log
+       	 записати в лог
+      end
+
+      curr_point = curr_interval.middle
+
+      далі йдуть тупі рутинні обчислення тупо
+      по формулі методом кравчика
+
+      // calculate interval using kravchyk formula
+      temp_interval = new Interval(curr_point)
+      deriv_point = this.functionDeriv.call(curr_point)
+      func_interval = new Interval(this.function.call(curr_point)/deriv_point)
+
+      deriv_interval = this.derivTransformer.transform(curr_interval)
+
+      deriv_interval = new Interval(1.0) - deriv_interval / deriv_point
+      deriv_interval = deriv_interval * (curr_interval - temp_interval)
+      
+      next_interval = temp_interval - func_interval + deriv_interval
+      
+      next_interval = Interval.intersect2(curr_interval, next_interval)
+
+      if next_interval.empty?
+      	 break 
+
+      if (next_interval.width > 0.5*curr_interval.width)
+        arr = curr_interval.divide2
+        inner_solve(arr[0])
+        inner_solve(arr[1])
+        break
+      end
+
+      if next_interval.width <= this.epsilon
+            this.zeros.add(next_interval.middle) 
+      this.steps_counter += 1
+
+      if (this.function.call(next_interval.middle).abs <= this.epsilon)
+        this.zeros.add(next_interval.middle)
+        break
+      end
+      
+      curr_interval = next_interval
+    end
+    
+  end
+  
+end
