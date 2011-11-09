@@ -1,0 +1,14 @@
+~*.*
+*~.*
+*.~*
+*~
+#*#
+/bin
+/obj
+octave-core
+*.zip
+*.tar*
+*.exe
+*.ncb
+Release/
+Debug/
