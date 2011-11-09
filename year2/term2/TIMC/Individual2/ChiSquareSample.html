@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Chi-Square check</title>
+</head>
+<body style="background: url(Images/BackGround.png) repeat-y; background-color:#F8F8FF;">
+<div style="margin-left:100px;">
+     	<div style="margin-top:10px; border:dashed; border-width:thin; width:440px; background-color:#F8F8FF;
+			padding-left:20px; border-color:#D3D3D3;">
+		<form action="index.php" style="margin:10px;">
+			<table cellspacing="10px">
+				<tr>
+					<td>
+						<input type="checkbox" name="IsContinuous">Continuous sampling</input>
+					</td>
+				</tr>
+                                <tr>
+                                    <td>
+                                        Alpha:&nbsp;&nbsp;&nbsp;<input type="text" size="9"  name="alpha" value="0.05" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Epsilon:&nbsp;<input type="text" size="9"  name="epsilon" value="0.00001" />
+                                    </td>
+                                </tr>
+				<tr>
+					<td>Check, that sampling has &nbsp;
+						<select name="Distribution" size="1">
+							<option value="1">Poisson distribution</option>
+							<option value="2">Normal distribution</option>
+                                                      <!--  <option value="3">Continuous distribution</option> -->
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style="color:gray;">
+                                            <br />
+						Sample of input data for <strong>Continuous sampling</strong> check:<br />
+						&nbsp;&nbsp;{<strong>Value</strong>} {<strong>Count</strong>}<br /><br />
+						Sample of input data for <strong>Discrete sampling</strong> check:<br />
+						&nbsp;&nbsp;<strong>[</strong>{<strong>Left</strong> Segment Bound},
+						{<strong>Right</strong> Segment Bound}<strong>]</strong> {<strong>Count</strong>}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br />
+						Sampling:
+						<br />						
+						<textarea rows="20" cols="30" wrap="hard" style="margin-top:5px;" name="textbox">[3,4] 115</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" style="margin-left:70px;" value="Submit sampling" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+    <iframe src="ChiCriticalCalc.html" frameborder="0" width="100%" height="400px"></iframe>
+</div>
+</body>
+</html>

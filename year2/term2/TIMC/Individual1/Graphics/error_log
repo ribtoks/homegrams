@@ -1,0 +1,321 @@
+[24-Sep-2009 20:30:00] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[24-Sep-2009 20:30:00] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[24-Sep-2009 20:30:00] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[24-Sep-2009 20:30:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[24-Sep-2009 20:30:00] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[24-Sep-2009 20:30:00] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[24-Sep-2009 20:30:00] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[24-Sep-2009 20:30:00] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[24-Sep-2009 20:30:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[24-Sep-2009 20:30:01] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[24-Sep-2009 20:30:01] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[24-Sep-2009 20:30:01] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[24-Sep-2009 20:30:01] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[24-Sep-2009 20:30:01] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[24-Sep-2009 20:30:01] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[24-Sep-2009 20:30:01] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[24-Sep-2009 20:30:01] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[25-Sep-2009 13:38:37] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[25-Sep-2009 13:38:37] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[25-Sep-2009 13:38:37] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[25-Sep-2009 13:38:37] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[25-Sep-2009 13:38:37] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[25-Sep-2009 13:38:37] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[25-Sep-2009 13:38:37] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[25-Sep-2009 13:38:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[25-Sep-2009 13:38:37] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[25-Sep-2009 13:38:38] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[25-Sep-2009 13:38:38] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[25-Sep-2009 13:38:38] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[25-Sep-2009 13:38:38] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 13:38:38] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 13:38:38] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 13:38:38] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[25-Sep-2009 13:38:38] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[25-Sep-2009 13:38:38] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[25-Sep-2009 13:38:38] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[25-Sep-2009 13:38:38] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[25-Sep-2009 13:38:38] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[25-Sep-2009 13:38:38] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[25-Sep-2009 13:38:38] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[25-Sep-2009 14:16:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[25-Sep-2009 14:16:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[25-Sep-2009 14:16:41] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[25-Sep-2009 14:16:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[25-Sep-2009 14:16:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[25-Sep-2009 14:16:41] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 14:16:41] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 14:16:41] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 14:16:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[25-Sep-2009 14:16:41] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[25-Sep-2009 14:16:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[25-Sep-2009 14:16:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[25-Sep-2009 14:16:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[25-Sep-2009 14:16:41] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[25-Sep-2009 14:16:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[25-Sep-2009 14:16:56] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[25-Sep-2009 14:16:56] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[25-Sep-2009 14:16:56] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[25-Sep-2009 14:16:56] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[25-Sep-2009 14:16:56] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[25-Sep-2009 14:16:56] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[25-Sep-2009 14:16:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[25-Sep-2009 14:16:57] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[25-Sep-2009 14:16:57] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[25-Sep-2009 14:16:57] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[25-Sep-2009 14:16:57] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 14:16:57] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 14:16:57] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[25-Sep-2009 14:16:57] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[25-Sep-2009 14:16:57] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[25-Sep-2009 14:16:57] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[25-Sep-2009 14:16:57] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[25-Sep-2009 14:16:57] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[25-Sep-2009 14:16:57] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[25-Sep-2009 14:16:57] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[25-Sep-2009 14:16:57] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[25-Sep-2009 14:16:57] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[25-Sep-2009 14:16:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[26-Sep-2009 18:00:53] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[26-Sep-2009 18:00:53] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[26-Sep-2009 18:00:53] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[26-Sep-2009 18:00:53] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[26-Sep-2009 18:00:53] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[26-Sep-2009 18:00:53] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[26-Sep-2009 18:00:53] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[26-Sep-2009 18:00:53] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[26-Sep-2009 18:00:53] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 18
+[26-Sep-2009 18:00:53] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 33
+[26-Sep-2009 18:00:53] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 35
+[26-Sep-2009 18:00:53] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 35
+[26-Sep-2009 18:00:53] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 36
+[26-Sep-2009 18:00:53] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 43
+[26-Sep-2009 18:00:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php:18) in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 71
+[28-Sep-2009 19:07:29] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[28-Sep-2009 19:07:29] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[28-Sep-2009 19:07:29] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[28-Sep-2009 19:07:29] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[28-Sep-2009 19:07:29] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[28-Sep-2009 19:07:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[28-Sep-2009 19:07:29] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[28-Sep-2009 19:07:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[28-Sep-2009 19:07:29] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[28-Sep-2009 19:07:29] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[28-Sep-2009 19:07:29] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[28-Sep-2009 19:07:29] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[28-Sep-2009 19:07:29] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[28-Sep-2009 19:07:29] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[28-Sep-2009 19:07:29] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[28-Sep-2009 19:11:49] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[28-Sep-2009 19:11:49] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[28-Sep-2009 19:11:49] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[28-Sep-2009 19:11:49] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[28-Sep-2009 19:11:49] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[28-Sep-2009 19:11:49] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[28-Sep-2009 19:11:49] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[28-Sep-2009 19:11:49] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[28-Sep-2009 19:11:49] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[28-Sep-2009 19:11:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[28-Sep-2009 19:11:49] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[28-Sep-2009 19:11:49] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[28-Sep-2009 19:11:49] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[28-Sep-2009 19:11:49] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[28-Sep-2009 19:11:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[30-Sep-2009 12:21:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[30-Sep-2009 12:21:42] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[30-Sep-2009 12:21:42] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[30-Sep-2009 12:21:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[30-Sep-2009 12:21:42] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[30-Sep-2009 12:21:42] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[30-Sep-2009 12:21:42] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[30-Sep-2009 12:21:42] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[30-Sep-2009 12:21:42] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[30-Sep-2009 12:21:42] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[30-Sep-2009 12:21:42] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[30-Sep-2009 12:21:42] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[30-Sep-2009 12:21:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[30-Sep-2009 12:21:42] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[30-Sep-2009 12:21:42] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[30-Sep-2009 12:21:54] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[30-Sep-2009 12:21:54] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[30-Sep-2009 12:21:54] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[30-Sep-2009 12:21:54] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[30-Sep-2009 12:21:54] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[30-Sep-2009 12:21:54] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[30-Sep-2009 12:21:54] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[30-Sep-2009 12:21:54] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[30-Sep-2009 12:21:54] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[30-Sep-2009 12:21:54] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[30-Sep-2009 12:21:54] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[30-Sep-2009 12:21:54] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[30-Sep-2009 12:21:54] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[30-Sep-2009 12:21:54] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[30-Sep-2009 12:21:54] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[06-Oct-2009 11:53:27] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[06-Oct-2009 11:53:27] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[06-Oct-2009 11:53:27] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[06-Oct-2009 11:53:27] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[06-Oct-2009 11:53:27] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[06-Oct-2009 11:53:27] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[06-Oct-2009 11:53:27] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 18
+[06-Oct-2009 11:53:27] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 33
+[06-Oct-2009 11:53:27] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 35
+[06-Oct-2009 11:53:27] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 35
+[06-Oct-2009 11:53:27] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 36
+[06-Oct-2009 11:53:27] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 43
+[06-Oct-2009 11:53:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php:18) in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 71
+[06-Oct-2009 11:53:27] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[06-Oct-2009 11:53:27] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[07-Oct-2009 22:36:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[07-Oct-2009 22:36:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[07-Oct-2009 22:36:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[07-Oct-2009 22:36:41] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[07-Oct-2009 22:36:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[07-Oct-2009 22:36:41] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[07-Oct-2009 22:36:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[07-Oct-2009 22:36:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[07-Oct-2009 22:36:41] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[07-Oct-2009 22:36:41] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[07-Oct-2009 22:36:41] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[07-Oct-2009 22:36:41] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[07-Oct-2009 22:36:41] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[07-Oct-2009 22:36:41] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[07-Oct-2009 22:36:41] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[07-Oct-2009 22:37:01] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[07-Oct-2009 22:37:01] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[07-Oct-2009 22:37:01] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[07-Oct-2009 22:37:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[07-Oct-2009 22:37:01] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[07-Oct-2009 22:37:01] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[07-Oct-2009 22:37:01] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[07-Oct-2009 22:37:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[07-Oct-2009 22:37:01] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[07-Oct-2009 22:37:01] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[07-Oct-2009 22:37:01] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[07-Oct-2009 22:37:01] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[07-Oct-2009 22:37:01] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[07-Oct-2009 22:37:01] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[07-Oct-2009 22:37:01] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[09-Oct-2009 11:24:30] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[09-Oct-2009 11:24:30] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[09-Oct-2009 11:24:30] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[09-Oct-2009 11:24:30] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[09-Oct-2009 11:24:30] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[09-Oct-2009 11:24:30] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[09-Oct-2009 11:24:30] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[09-Oct-2009 11:24:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[09-Oct-2009 11:24:30] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[09-Oct-2009 11:24:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[09-Oct-2009 11:24:30] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[09-Oct-2009 11:24:30] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[09-Oct-2009 11:24:30] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[09-Oct-2009 11:24:30] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[09-Oct-2009 11:24:30] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[09-Oct-2009 13:36:55] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 43
+[09-Oct-2009 13:36:55] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 45
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 47
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 48
+[09-Oct-2009 13:36:55] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 57
+[09-Oct-2009 13:36:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Diagram.php on line 98
+[09-Oct-2009 13:36:55] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[09-Oct-2009 13:36:55] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 43
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 45
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 46
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[09-Oct-2009 13:36:55] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 58
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 59
+[09-Oct-2009 13:36:55] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 60
+[09-Oct-2009 13:36:55] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 62
+[09-Oct-2009 13:36:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php:43) in /home/forewar/public_html/TIMC/Ind1/Graphics/Polygon.php on line 100
+[09-Oct-2009 13:36:55] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[09-Oct-2009 13:36:55] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[09-Oct-2009 13:36:55] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[09-Oct-2009 13:36:55] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[09-Oct-2009 13:36:55] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
+[13-Oct-2009 09:48:44] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 18
+[13-Oct-2009 09:48:44] PHP Warning:  Division by zero in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 33
+[13-Oct-2009 09:48:44] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 35
+[13-Oct-2009 09:48:44] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 35
+[13-Oct-2009 09:48:44] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 36
+[13-Oct-2009 09:48:44] PHP Warning:  Invalid argument supplied for foreach() in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 43
+[13-Oct-2009 09:48:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php:18) in /home/forewar/public_html/TIMC/Ind1/Graphics/Histogram.php on line 71
+[13-Oct-2009 09:48:44] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 15
+[13-Oct-2009 09:48:44] PHP Warning:  Wrong parameter count for min() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 17
+[13-Oct-2009 09:48:44] PHP Warning:  Wrong parameter count for max() in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 18
+[13-Oct-2009 09:48:44] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[13-Oct-2009 09:48:44] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[13-Oct-2009 09:48:44] PHP Warning:  array_key_exists() [<a href='function.array-key-exists'>function.array-key-exists</a>]: The second argument should be either an array or an object in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 70
+[13-Oct-2009 09:48:44] PHP Warning:  array_values() [<a href='function.array-values'>function.array-values</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 104
+[13-Oct-2009 09:48:44] PHP Warning:  array_sum() [<a href='function.array-sum'>function.array-sum</a>]: The argument should be an array in /home/forewar/public_html/TIMC/Ind1/Graphics/Graphic.php on line 106
