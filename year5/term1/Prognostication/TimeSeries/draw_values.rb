@@ -1,6 +1,6 @@
 require 'gnuplot'
 
-def draw_datasets(time_values, values, trend, m5, m7, first_n=nil)
+def draw_datasets(time_values, values, trend, m5, m7, tplus2, first_n=nil)
 
   Gnuplot.open do |gp|
     Gnuplot::Plot.new( gp ) do |plot|
@@ -27,9 +27,14 @@ def draw_datasets(time_values, values, trend, m5, m7, first_n=nil)
         ds.with = "lines lt 2"
         ds.notitle
       end
-
+      
       plot.data << Gnuplot::DataSet.new( [time_values.first(first_n), m7.first(first_n)] ) do |ds|
         ds.with = "lines lt 3"
+        ds.notitle
+      end
+
+      plot.data << Gnuplot::DataSet.new( [time_values.first(first_n), tplus2.first(first_n)] ) do |ds|
+        ds.with = "lines lt 8"
         ds.notitle
       end
 

@@ -32,10 +32,11 @@ def smooth_with_wma(arr, wma_func, n)
   return new_arr if n <= 0
 
   start = n
-  finish = -n
+  finish = -n + arr.size
 
   (start...finish).each do |i|
     new_arr[i] = wma_func.call(arr, i)
+    puts new_arr[i]
   end
   new_arr
 end
@@ -44,24 +45,24 @@ def find_k(arr)
   prev_diffs = arr.diffs
   curr_diffs = arr.diffs.diffs
 
-  puts "\n"
-  puts prev_diffs.max_abs
+  #puts "\n"
+  #puts prev_diffs.max_abs
   k = 1  
   
   while curr_diffs.max_abs < 1.0 #curr_diffs.max_abs < prev_diffs.max_abs
     prev_diffs = Array.new(curr_diffs)
     curr_diffs = curr_diffs.diffs
 
-    puts prev_diffs.max_abs
+    #puts prev_diffs.max_abs
     k += 1
 
     break if curr_diffs.compact.size == 1
   end
 
-  puts "----------"
-  puts curr_diffs.max_abs
-  puts prev_diffs.max_abs
-  puts "----------"
+  # puts "----------"
+  # puts curr_diffs.max_abs
+  # puts prev_diffs.max_abs
+  # puts "----------"
 
   k
 end
@@ -88,6 +89,16 @@ def get_wma7(y, pos)
   y_vect.scalar_product(coefs)
 end
 
+def get_tplus2(y, pos)
+  coefs = [3, -5, -3, 9, 31]
+  coefs.map!{|c| c / 35.0}
+
+  a = 2
+  y_vect = y[(pos - a)..(pos+a)]
+  
+  y_vect.scalar_product(coefs)
+end
+
 
 ##############################
 
@@ -98,6 +109,8 @@ time_values, values = read_all 'my_currencies'
 smooth_count = 2
 n = 3
 all_arrays = [values]
+
+first_data = Array.new(values)
 # smooth array some number of times
 temp_arr = values
 smooth_count.times do |i|
@@ -107,7 +120,7 @@ end
 values = temp_arr
 all_arrays << temp_arr
 
-puts values.inspect
+#puts values.inspect
 
 # find power of polynomial
 k = find_k values
@@ -117,11 +130,11 @@ k = 6
 temp_arr = values
 
 values.size.times do |i|  
-  puts "#{i} - #{temp_arr.max_abs}"
+  #puts "#{i} - #{temp_arr.max_abs}"
   temp_arr = temp_arr.diffs
 end
 
-puts "\nk == #{k}\n\n"
+#puts "\nk == #{k}\n\n"
 
 ##############################
 
@@ -164,9 +177,10 @@ polynom = polynom_arr.join("+")
 
 ##############################
 
-m5_data = smooth_with_wma(values, method(:get_wma5), 2).map{|x|x + 0.9}
-m7_data = smooth_with_wma(values, method(:get_wma7), 3).map{|x| x + 1}
+m5_data = smooth_with_wma(first_data, method(:get_wma5), 2).map{|x|x + 0.9}
+m7_data = smooth_with_wma(first_data, method(:get_wma7), 3).map{|x| x + 1}
+tplus2_data = smooth_with_wma(first_data, method(:get_tplus2), 2).map{|x|x+1.1}
 
 ##############################
 
-draw_datasets time_values, values, polynom, m5_data, m7_data
+draw_datasets time_values, first_data, polynom, m5_data, m7_data, tplus2_data
