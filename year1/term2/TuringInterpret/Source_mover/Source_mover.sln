@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Source_mover", "Source_mover.vcproj", "{8B8DE938-9236-412A-9383-CD6BBFB05265}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B8DE938-9236-412A-9383-CD6BBFB05265}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B8DE938-9236-412A-9383-CD6BBFB05265}.Debug|Win32.Build.0 = Debug|Win32
+		{8B8DE938-9236-412A-9383-CD6BBFB05265}.Release|Win32.ActiveCfg = Release|Win32
+		{8B8DE938-9236-412A-9383-CD6BBFB05265}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
