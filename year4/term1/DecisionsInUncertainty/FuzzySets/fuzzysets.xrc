@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxFrame" name="MainFrame" subclass="FuzzySetsFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>820,670</size>
+		<title>FuzzySets</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND|wxLEFT</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText4">
+							<label>a:</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxTextCtrl" name="leftBoundTextBox">
+							<value>-2</value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText5">
+							<label>b:</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxTextCtrl" name="rightBoundTextBox">
+							<value>5</value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>10</border>
+						<object class="wxStaticText" name="m_staticText1">
+							<style>wxALIGN_CENTRE</style>
+							<size>100,-1</size>
+							<label>Function 1</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxTextCtrl" name="function1TextBox">
+							<size>200,-1</size>
+							<tooltip>Function body</tooltip>
+							<value>Math.sin(x)**2</value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxChoice" name="color1Choise">
+							<selection>9</selection>
+							<content>
+								<item>maroon</item>
+								<item>gold</item>
+								<item>gainsboro</item>
+								<item>white</item>
+								<item>black</item>
+								<item>darkslategray</item>
+								<item>dimgray</item>
+								<item>midnightblue</item>
+								<item>blue</item>
+								<item>steelblue</item>
+								<item>turtuoise</item>
+								<item>darkolivegreen</item>
+								<item>seagreen</item>
+								<item>forestgreen</item>
+								<item>yellow</item>
+								<item>saddlebrown</item>
+								<item>firebrick</item>
+								<item>red</item>
+							</content>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>10</border>
+						<object class="wxStaticText" name="m_staticText2">
+							<style>wxALIGN_CENTRE</style>
+							<size>100,-1</size>
+							<label>Function 2</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxTextCtrl" name="function2TextBox">
+							<size>200,-1</size>
+							<value>Math.cos(Math.exp(x)).abs</value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxChoice" name="color2Choise">
+							<selection>12</selection>
+							<content>
+								<item>maroon</item>
+								<item>gold</item>
+								<item>gainsboro</item>
+								<item>white</item>
+								<item>black</item>
+								<item>darkslategray</item>
+								<item>dimgray</item>
+								<item>midnightblue</item>
+								<item>blue</item>
+								<item>steelblue</item>
+								<item>turtuoise</item>
+								<item>darkolivegreen</item>
+								<item>seagreen</item>
+								<item>forestgreen</item>
+								<item>yellow</item>
+								<item>saddlebrown</item>
+								<item>firebrick</item>
+								<item>red</item>
+							</content>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+						<border>10</border>
+						<object class="wxStaticText" name="m_staticText3">
+							<style>wxALIGN_CENTRE</style>
+							<size>100,-1</size>
+							<label>Result Function</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxChoice" name="operationChoise">
+							<size>200,-1</size>
+							<selection>0</selection>
+							<content>
+								<item>min</item>
+								<item>max</item>
+								<item>1minus</item>
+								<item>lower_sum</item>
+								<item>upper_sum</item>
+								<item>product</item>
+								<item>xor</item>
+								<item>lower_difference</item>
+								<item>concentration</item>
+							</content>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxChoice" name="resultColorChoise">
+							<selection>0</selection>
+							<content>
+								<item>maroon</item>
+								<item>gold</item>
+								<item>gainsboro</item>
+								<item>white</item>
+								<item>black</item>
+								<item>darkslategray</item>
+								<item>dimgray</item>
+								<item>midnightblue</item>
+								<item>blue</item>
+								<item>steelblue</item>
+								<item>turtuoise</item>
+								<item>darkolivegreen</item>
+								<item>seagreen</item>
+								<item>forestgreen</item>
+								<item>yellow</item>
+								<item>saddlebrown</item>
+								<item>firebrick</item>
+								<item>red</item>
+							</content>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="drawButton">
+							<size>120,-1</size>
+							<label>Draw</label>
+							<default>1</default>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL</flag>
+				<border>5</border>
+				<object class="wxStaticBitmap" name="m_bitmap1">
+					<size>800,510</size>
+					<bitmap />
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

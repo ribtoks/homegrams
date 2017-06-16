@@ -1,0 +1,629 @@
+﻿<Window x:Class="HierarchyInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:HierarchyInterface"
+        Title="Hierarchy Builder" WindowStartupLocation="CenterScreen" 
+        Height="460" Width="625" MinWidth="625" MinHeight="400">
+    <Window.Resources>
+        <Style x:Key="NodeLinkButton" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Ellipse Name="outerEllipse">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                                        <GradientStop Offset="0.4" Color="DimGray" />
+                                        <GradientStop Offset="1" Color="White" />
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Margin="5" Name="ellipse" Fill="{TemplateBinding Background}" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Fill" TargetName="ellipse">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#C66415" />
+                                            <GradientStop Offset="1" Color="White" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Fill" TargetName="outerEllipse" Value="DimGray" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="ellipse">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0.5" Color="#C66415" />
+                                            <GradientStop Offset="1" Color="White" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Fill" TargetName="outerEllipse" Value="DimGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="MatrixRectangleStyle" TargetType="{x:Type Rectangle}">
+            <Setter Property="RadiusX" Value="15" />
+            <Setter Property="RadiusY" Value="15" />
+            <Setter Property="Fill" Value="WhiteSmoke" />
+            <Setter Property="Opacity" Value="0.4" />
+        </Style>
+        <Style x:Key="CloseButton" TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="mainGrid" Margin="0 2">
+                            <Line Name="line1" X1="0" Y1="0" X2="{TemplateBinding Width}" StrokeThickness="2" Y2="{TemplateBinding Height}">
+                                <Line.Stroke>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="White" />
+                                        <GradientStop Offset="1" Color="Black" />
+                                    </LinearGradientBrush>
+                                </Line.Stroke>
+                            </Line>
+                            <Line Name="line2" X1="{TemplateBinding Width}" Y1="0" X2="0" StrokeThickness="2" Y2="{TemplateBinding Height}">
+                                <Line.Stroke>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="White" />
+                                        <GradientStop Offset="1" Color="Black" />
+                                    </LinearGradientBrush>
+                                </Line.Stroke>
+                            </Line>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="StrokeThickness" TargetName="line1" Value="4" />
+                                <Setter Property="StrokeThickness" TargetName="line2" Value="4" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="StrokeThickness" TargetName="line1" Value="3" />
+                                <Setter Property="StrokeThickness" TargetName="line2" Value="3" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="AddButton" TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="mainGrid">
+                            <Line X1="10" Y1="2" X2="10" x:Name="line1" StrokeThickness="4"
+                                  Y2="18" StrokeStartLineCap="Round"
+                                  StrokeEndLineCap="Round">
+                                <Line.Stroke>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="LightBlue" />
+                                        <GradientStop Offset="1" Color="Blue" />
+                                    </LinearGradientBrush>
+                                </Line.Stroke>
+                            </Line>
+                            <Line X1="2" Y1="10" X2="18" x:Name="line2" StrokeStartLineCap="Round" 
+                                  StrokeThickness="4" Y2="10" StrokeEndLineCap="Round">
+                                <Line.Stroke>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="1 0">
+                                        <GradientStop Offset="1" Color="White" />
+                                        <GradientStop Offset="0" Color="Blue" />
+                                    </LinearGradientBrush>
+                                </Line.Stroke>
+                            </Line>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="StrokeThickness" TargetName="line1" Value="6" />
+                                <Setter Property="StrokeThickness" TargetName="line2" Value="6" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="StrokeThickness" TargetName="line1" Value="5" />
+                                <Setter Property="StrokeThickness" TargetName="line2" Value="5" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="NodeButton" TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Margin" Value="5 0 5 0" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid x:Name="templateGrid">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3" />
+                                <RowDefinition Height="*" MinHeight="12" />
+                                <RowDefinition Height="*" MinHeight="12" />
+                                <RowDefinition Height="3" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="25" />
+                                <ColumnDefinition Width="*" MinWidth="20" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <Rectangle Name="BackgroundRectangle" RadiusX="5" RadiusY="5" 
+                                       Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="4">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="#CE8B55" />
+                                        <GradientStop Offset="1" Color="#543B27" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                                <Rectangle.Stroke>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="White" />
+                                        <GradientStop Offset="1" Color="#666666" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Stroke>                                
+                            </Rectangle>
+                            <Rectangle Name="GelShine" Margin="2 2 2 0" RadiusX="3" RadiusY="3"
+                                       Stroke="Transparent" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="4">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="#ccffffff" />
+                                        <GradientStop Offset="1" Color="Transparent" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Button Name="innerEllipseButton" Margin="2" Click="innerEllipseButton_Click" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" 
+                                    Background="White" Style="{StaticResource NodeLinkButton}" />
+                            <ContentPresenter Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Name="NodeButtonContent" VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"
+                                              Content="{TemplateBinding Content}" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Rectangle.Fill" TargetName="BackgroundRectangle">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#C66415" />
+                                            <GradientStop Offset="1" Color="#723708" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Rectangle.Fill" TargetName="BackgroundRectangle">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#ffcc00" />
+                                            <GradientStop Offset="1" Color="#cc9900" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="MatrixNodeButton" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Name="matrixButtonGrid" Height="50" Margin="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="30" />
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Name="rect" Style="{StaticResource MatrixRectangleStyle}" Grid.ColumnSpan="4" />
+                            <TextBlock Margin="5" FontSize="9" Grid.Column="1" Foreground="WhiteSmoke" TextWrapping="Wrap">01234567890123456789012345678901</TextBlock>
+                            <Label Grid.Column="2" Margin="5" Foreground="White" VerticalAlignment="Center" Content="{TemplateBinding Content}" />
+                            <Button Grid.Column="3" Name="deleteCurrMatrix" Click="deleteCurrMatrix_Click" Style="{StaticResource CloseButton}" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" TargetName="rect" Value="0.7" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- oooooooooooooooooooooooooooo -->
+        <Storyboard x:Key="showOverlay" SpeedRatio="2" Completed="Storyboard_Completed">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="overlayGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Storyboard.TargetName="overlayGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"  />
+        </Storyboard>
+        <Storyboard x:Key="hideOverlay" SpeedRatio="5">
+            <DoubleAnimation Storyboard.TargetName="overlayGrid" BeginTime="0:0:0.4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"  />
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0.7" Storyboard.TargetName="overlayGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- oooooooooooooooooooooooooooo -->
+        <Storyboard x:Key="showMatrixOverlay" SpeedRatio="2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="matrixOverlayGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Storyboard.TargetName="matrixOverlayGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"  />
+        </Storyboard>
+        <Storyboard x:Key="hideMatrixOverlay" SpeedRatio="5">
+            <DoubleAnimation Storyboard.TargetName="matrixOverlayGrid" BeginTime="0:0:0.4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"  />
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0.7" Storyboard.TargetName="matrixOverlayGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- oooooooooooooooooooooooooooo -->
+        <Storyboard x:Key="showExpertNameOverlay" SpeedRatio="2" Completed="Storyboard_Completed_1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="enterExpertNameGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Storyboard.TargetName="enterExpertNameGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"  />
+        </Storyboard>
+        <Storyboard x:Key="hideExpertNameOverlay" SpeedRatio="5">
+            <DoubleAnimation Storyboard.TargetName="enterExpertNameGrid" BeginTime="0:0:0.4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"  />
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0.7" Storyboard.TargetName="enterExpertNameGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- oooooooooooooooooooooooooooo -->
+        <Storyboard x:Key="showMatricesOverlay" SpeedRatio="2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="matricesOverlayGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Storyboard.TargetName="matricesOverlayGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"  />
+        </Storyboard>
+        <Storyboard x:Key="hideMatricesOverlay" SpeedRatio="5">
+            <DoubleAnimation Storyboard.TargetName="matricesOverlayGrid" BeginTime="0:0:0.4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"  />
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0.7" Storyboard.TargetName="matricesOverlayGrid" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Style x:Key="MenuButton" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5 0 0 0" />
+            <!--
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            -->
+        </Style>
+        <Storyboard x:Key="lineAnimation">
+            <DoubleAnimation AutoReverse="True" RepeatBehavior="Forever" From="0" To="360" 
+                             Storyboard.TargetName="lineRotate"
+                             Storyboard.TargetProperty="Angle"
+                             Duration="0:0:1" AccelerationRatio="0.6"/>
+        </Storyboard>
+        <!-- oooooooooooooooooooooooooooo -->
+        <Storyboard x:Key="showWatingResults" SpeedRatio="2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="watingResultsOverlay" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Storyboard.TargetName="watingResultsOverlay" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"  />
+        </Storyboard>
+        <Storyboard x:Key="hideWatingResults" SpeedRatio="5">
+            <DoubleAnimation Storyboard.TargetName="watingResultsOverlay" BeginTime="0:0:0.4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"  />
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0.7" Storyboard.TargetName="watingResultsOverlay" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <!-- oooooooooooooooooooooooooooo -->
+        <Storyboard x:Key="showResults" SpeedRatio="2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="resultsOverlay" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Storyboard.TargetName="resultsOverlay" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5"  />
+        </Storyboard>
+        <Storyboard x:Key="hideResults" SpeedRatio="5">
+            <DoubleAnimation Storyboard.TargetName="resultsOverlay" BeginTime="0:0:0.4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"  />
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0.7" Storyboard.TargetName="resultsOverlay" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Style x:Key="mySystemButton" TargetType="{x:Type Button}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="Foreground" Value="#1f1f1f" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Width="{TemplateBinding Width}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="5" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="5" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Name="backgroundRect" Grid.Row="0" Grid.Column="0" 
+                                       Grid.RowSpan="4" Grid.ColumnSpan="3"
+                                       RadiusX="10" RadiusY="10" StrokeThickness="2">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="Gray" />
+                                        <GradientStop Offset="1" Color="DimGray" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                                <Rectangle.Stroke>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="1" Color="LightGray" />
+                                        <GradientStop Offset="-0.5" Color="DimGray" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Stroke>
+                            </Rectangle>
+                            <Rectangle Name="GelShine" Margin="2 2 0.5 -5" RadiusX="5" RadiusY="5"
+                                       Stroke="Transparent" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                                        <GradientStop Offset="0" Color="#ccffffff" />
+                                        <GradientStop Offset="1" Color="Transparent" />
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>                                
+                            </Rectangle>                            
+                            <ContentPresenter Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Name="NodeButtonContent" 
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"
+                                              Content="{TemplateBinding Content}" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="backgroundRect" Property="Rectangle.Fill">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="LightGray" />
+                                            <GradientStop Offset="1" Color="DimGray" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="backgroundRect" Property="Rectangle.Fill">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="LightGray" />
+                                            <GradientStop Offset="1" Color="Gray" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Name="wrapperGrid" MouseMove="wrapperGrid_MouseMove" MouseRightButtonUp="wrapperGrid_MouseRightButtonUp">
+        <Grid.Background>
+            <RadialGradientBrush GradientOrigin="0.5 0" Center="0.5 0">
+                <GradientStop Offset="0" Color="#fefefe" />
+                <GradientStop Offset="1" Color="Gray" />
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="LightGray" Panel.ZIndex="98">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Style="{StaticResource MenuButton}" FontWeight="Normal" 
+                        Grid.Column="0" Width="150" Click="Button_Click_2">Save hierarchy to file</Button>
+                <Button Style="{StaticResource MenuButton}" FontWeight="Normal" 
+                        Grid.Column="0" Width="150" Click="Button_Click_3">Load hierarchy from file</Button>
+                <Slider Name="lineIntervalSlider" Minimum="10" Maximum="100" Value="15" Orientation="Horizontal" SmallChange="1"
+                        LargeChange="2" Width="100" VerticalAlignment="Center"
+                        Margin="10 0 0 0" ToolTip="Line Interval" ValueChanged="lineIntervalSlider_ValueChanged" />
+            </StackPanel>
+            <Button Grid.Column="1" Margin="5" Click="Button_Click">Add new row</Button>
+        </Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Row="1" ScrollChanged="ScrollViewer_ScrollChanged" >
+            <local:MyStackPanel x:Name="hierarchyStack" Orientation="Vertical">
+            </local:MyStackPanel>
+        </ScrollViewer>
+        <Grid Panel.ZIndex="99" Grid.Row="2" Background="LightGray" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Width="100" Margin="5" HorizontalAlignment="Left" Click="Button_Click_4">Help</Button>
+            <Button Grid.Column="1" MaxWidth="300" Margin="5" Name="submitHierarchy" Click="submitHierarchy_Click">Submit hierarchy</Button>
+        </Grid>
+        <Grid Name="overlayGrid" Panel.ZIndex="100" Opacity="0" Grid.Row="0" Grid.RowSpan="3" Visibility="Collapsed" Background="#70000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="360" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+                <TextBlock Margin="5" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">Enter Caption:</TextBlock>
+                <TextBox Width="145" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Name="valueTextBox" KeyUp="valueTextBox_KeyUp" />
+                <Button Width="60" Margin="5" Grid.Column="1" Grid.Row="1" Name="submitButton" Click="submitButton_Click">Submit</Button>
+                <Button Width="60" Margin="0 5 5 5" Grid.Column="1" Grid.Row="1" Name="cancelButton" Click="cancelButton_Click">Cancel</Button>
+            </StackPanel>            
+        </Grid>
+        <Grid Name="matricesOverlayGrid" Opacity="0" Panel.ZIndex="101" Grid.Row="0" Grid.RowSpan="3" Visibility="Collapsed" Background="#a0000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+            <Grid Name="matricesGrid" Margin="5" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Name="matricesStack" Orientation="Vertical">
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <Button Margin="5" Width="200" Grid.Row="2" Grid.Column="1" Style="{StaticResource mySystemButton}" FontWeight="Normal" Name="addNewMatrix" Click="addNewMatrix_Click">Add new matrix</Button>
+            <Button Style="{StaticResource mySystemButton}" Width="200" Margin="5" Grid.Row="2" Grid.Column="2" Name="submitMatrices" Click="submitMatrices_Click">Close</Button>            
+        </Grid>
+        <Grid Name="enterExpertNameGrid" Opacity="0" Panel.ZIndex="102" Grid.Row="0" Grid.RowSpan="3" Visibility="Collapsed" Background="#70000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="360" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+                <TextBlock Margin="5" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">Expert Name:</TextBlock> <!--KeyUp="valueTextBox_KeyUp"-->
+                <TextBox Width="145" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Name="expertNameTextBox" KeyUp="expertNameTextBox_KeyUp" />
+                <Button Width="60" Margin="5" Grid.Column="1" Grid.Row="1" Name="submitNameButton" Click="submitNameButton_Click">Submit</Button>
+                <Button Width="60" Margin="0 5 5 5" Grid.Column="1" Grid.Row="1" Name="cancelNameButton" Click="cancelNameButton_Click">Cancel</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Name="matrixOverlayGrid" Opacity="0" Panel.ZIndex="103" Grid.Row="0" Grid.RowSpan="3" Visibility="Collapsed" Background="#70000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+            <Grid Name="matrixGrid" Margin="5" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" />
+            <Button Margin="5" Style="{StaticResource mySystemButton}" Grid.Row="2" Grid.Column="1" Name="submitMatrix" Click="submitMatrix_Click">Submit</Button>
+            <Button Margin="5" Style="{StaticResource mySystemButton}" Grid.Row="2" Grid.Column="2" Name="cancelMatrix" Click="cancelMatrix_Click">Cancel</Button>
+        </Grid>
+        <Grid Name="watingResultsOverlay" Opacity="0" Panel.ZIndex="104" Grid.Row="0" 
+              Grid.RowSpan="3" Visibility="Collapsed" Background="#80000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Line X1="4" Y1="100" X2="196" Y2="100" Stroke="White" StrokeThickness="6"
+                  Name="stupidAnimationLine" Grid.Row="2" Grid.Column="2"
+                  StrokeStartLineCap="Round" StrokeEndLineCap="Round" RenderTransformOrigin="0.5 0.5">
+                <Line.RenderTransform>
+                    <RotateTransform x:Name="lineRotate" />
+                </Line.RenderTransform>
+            </Line>
+            <Button Name="stopProcessButton" Style="{StaticResource mySystemButton}" FontWeight="Normal" Grid.Row="4" Grid.Column="2" Click="stopProcessButton_Click">Stop calculations</Button>
+        </Grid>
+        <Grid Name="resultsOverlay" Opacity="0" Panel.ZIndex="105" Grid.Row="0" 
+              Grid.RowSpan="3" Visibility="Collapsed" Background="#c0000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <ScrollViewer Foreground="White" Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Hidden">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Name="resultsStack">
+                    </StackPanel>
+                </ScrollViewer>
+            </ScrollViewer>
+            <Button Width="250" Name="closeResultsButton" Style="{StaticResource mySystemButton}" 
+                    Grid.Row="2" Grid.Column="1" 
+                    Click="closeResultsButton_Click">Close results</Button>
+        </Grid>
+    </Grid>
+</Window>

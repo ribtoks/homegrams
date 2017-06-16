@@ -1,0 +1,38 @@
+class IntervalTransformer
+
+  function constructor
+  end
+
+  function transform(interval)
+    
+  end
+  
+end
+
+
+class MyTransformer1 : IntervalTransformer
+  function constructor
+    base()
+  end
+
+  function transform(interval)
+    Interval.sin(interval)
+  end
+end
+
+class MyDerivTransformer1 : IntervalTransformer
+  function constructor
+    base
+  end
+
+  function transform(interval)
+    Interval.cos(interval)
+  end
+end
+
+epsilon = 0.0000001
+interval = Interval.new(-70, 100)
+
+binaryFinder = BinaryFinder.new(MyTransformer2.new)
+print binaryFinder.solve(epsilon, interval)
+print binaryFinder.steps_counter

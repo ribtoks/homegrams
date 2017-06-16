@@ -1,0 +1,10 @@
+Finite Elements Method is implemented on several programming languages:
+
+Ruby - https://github.com/Ribtoks/rFEM
+Python - https://github.com/Ribtoks/pyFEM
+C# - https://github.com/Ribtoks/csFEM (not done yet - need collaborator)
+Java - https://github.com/Ribtoks/jFEM (is going to be implemented in nearest future)
+
+Notice, that two branches exist:
+- master (this term task)
+- multipoint (next term task)
