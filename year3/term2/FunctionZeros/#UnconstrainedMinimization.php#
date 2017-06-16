@@ -1,0 +1,23 @@
+function MulMatrix($m1, $m2)
+{
+   // $m1 == array [h1] [w1]
+   $m = array();
+   for ($i = 0; $i < count($m1); ++$i)
+   {
+      for ($j = 0; $j < count($m2[0]); ++$j)
+      {
+	 $temp_sum = 0;
+	 for ($k = 0; $k < count($m2); ++$k)
+	    $temp_sum += $m1[$i][$k]*$m2[$k][$j];
+	 $m[$i][$j] = $temp_sum;
+
+	 $temp
+      }
+   }
+}
+
+
+function FindMiminum($func, $x0, $alphaFunc, $hFunc, $epsilon)
+{
+   while ()
+}

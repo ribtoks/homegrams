@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroEngine", "MacroEngine\MacroEngine.csproj", "{41EC9709-2F0A-462C-8C17-CE7CE3DCB4FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroProcConsole", "MacroProcConsole\MacroProcConsole.csproj", "{1F9E3D54-096C-4F6C-8341-938C47E37B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroProcesor", "MacroProcesor\MacroProcesor.csproj", "{627E1739-F3BE-4D70-A247-2BD893958A63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F9E3D54-096C-4F6C-8341-938C47E37B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9E3D54-096C-4F6C-8341-938C47E37B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9E3D54-096C-4F6C-8341-938C47E37B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9E3D54-096C-4F6C-8341-938C47E37B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EC9709-2F0A-462C-8C17-CE7CE3DCB4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EC9709-2F0A-462C-8C17-CE7CE3DCB4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EC9709-2F0A-462C-8C17-CE7CE3DCB4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EC9709-2F0A-462C-8C17-CE7CE3DCB4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627E1739-F3BE-4D70-A247-2BD893958A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627E1739-F3BE-4D70-A247-2BD893958A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627E1739-F3BE-4D70-A247-2BD893958A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627E1739-F3BE-4D70-A247-2BD893958A63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MacroProcesor\MacroProcesor.csproj
+	EndGlobalSection
+EndGlobal

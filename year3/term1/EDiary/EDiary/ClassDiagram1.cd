@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EDiary.AboutEDiaryForm" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAAAAgAACAgCAUAAACAAAADAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>AboutEDiaryForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.AddEntryForm" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ChAAIAEAACCAEBACAACAUAACABAgAAAAAgAgAUgAMgA=</HashCode>
+      <FileName>AddEntryForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.AddPersonForm" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAgCCAQBAQAACAAAAGAAAIAAEAAHAIACCCIAA=</HashCode>
+      <FileName>AddPersonForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.AddStringForm" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIAAAAACCAAAAAAACAAAACAAAYAAAAAGAAAAABAAA=</HashCode>
+      <FileName>AddStringForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DiaryEntryItem" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DiaryEntryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.PersonInfo" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAkAABEQAQAREAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.EventInfo" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAgCAAAEAAAAAAAAAAAgQAABAEAAAQAAAAA=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DiaryEntry" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.FindEventsForm" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCBDQAABAC4ACAAKAaAoAgCEABEgAQAwEAEgg=</HashCode>
+      <FileName>FindEventsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Form1" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABUGCAIEACAhBLADQKCBAkAKAsAZMEAAgmAOHZAAgBA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.ManagePersonsForm" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAQKAAABAAAACAAAACQAAAAAAAAEAgAAAAABU=</HashCode>
+      <FileName>ManagePersonsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.ManageStringListForm" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAIAQCAAAEAABACAQAACAAIAAAACgEAgAAAAAAE=</HashCode>
+      <FileName>ManageStringList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.MyDiaryList" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACQEgAAAAAIAAIAAAAAAQBAAgAAAwQgCoA=</HashCode>
+      <FileName>MyDiaryList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.OptionsForm" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAAACAAABAAAACAAAACABAoAAAAAAAAQQBAgAI=</HashCode>
+      <FileName>OptionsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Program" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DrawingArea" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwCAAAAAAAAAAAAAAABAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>TransparentPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.DollarDrawer" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TransparentPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Staff.PersonList" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PersonList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Properties.Resources" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAYAQAABAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EDiary.Properties.Settings" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAwAAgAAAIAAAAAABAABAAACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EDiary.Appointment" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAEAAAAAAAAAAEIAAAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Entry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,49 @@
+mylength([], 0).
+mylength([_|Body], L) :- length(Body, L_T),L=L_T+1.
+
+
+member(X, [X|_]).
+member(X, [_|Body]) :- member(X, Body).
+
+
+concat([], List, List).
+concat([H|T], List, [H|NewList]) :- concat(T, List, NewList).
+
+
+last(X, List) :- concat(_, [X], List).
+
+neighbors(X, Y, List) :- concat(_, [X,Y|_], List).
+
+reverse([], []).
+reverse([X|T], NewList) :- reverse(T, S), concat(S, [X], NewList).
+
+n_element([X|_], 1, X).
+n_element([_|L], N, Y) :- Nm1 is N-1, n_element(L, Nm1, Y).
+
+insert(X, List, [X|List]).
+
+delete_all(_, [], []).
+delete_all(X, [X|List], NewList) :- delete_all(X, List, NewList).
+delete_all(X, [Y|L], [Y|NewList]) :- X=\=Y, delete_all(X, L, NewList).
+
+delete_one(_, [], []).
+delete_one(X, [X|List], List) :- !.
+delete_one(X, [Y|List], [Y|NewList]) :- X=\=Y, delete_one(X, List, NewList).
+
+
+inc_all([],[]).
+inc_all([X|L], [Y|NewList]) :- Y is X+1, inc_all(L, NewList).
+
+twice_all([],[]).
+twice_all([X|L], [Y|NewList]) :- Y is X*2, twice_all(L, NewList).
+
+
+replace_at_index([], _, _, []).
+replace_at_index([_|List], X, 1, [X|List]) :- !.
+replace_at_index([H|List], X, N, [H|ResList]) :- Nm1 is N-1, replace_at_index(List,X, Nm1, ResList).
+
+swap_two(_, _, [], []).
+swap_two(I, J, List, NewList) :- n_element(List, I, K),
+	n_element(List, J, M),
+	replace_at_index(List, M, I, TempList),
+	replace_at_index(TempList, K, J, NewList).

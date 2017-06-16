@@ -1,0 +1,17 @@
+function y = calculateAcoefs(Points, Values)
+
+A = zeros(length(Points));
+
+for i=1:length(Points)	
+	for j=1:length(Points)
+		B(i, j) = Points(j) ^ (i - 1);
+	end	
+end
+
+A = B' * B;
+
+b = B' * (Values');
+
+y = A \ b;
+
+end
